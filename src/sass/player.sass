@@ -1,0 +1,39 @@
+.player
+    .time_control
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 50px
+        .player_range
+            -webkit-appearance: none
+            appearance: none
+            height: 20px
+            width: 40vw
+
+            border-radius: 30px
+            &::-webkit-slider-thumb
+                -webkit-appearance: none
+                appearance: none
+                background-color: white
+                width: 25px
+                height: 25px
+                border-radius: 100%
+        .player_start
+            margin-bottom: 0
+            margin-right: 10px
+        .player_end
+            margin-bottom: 0
+            margin-left: 10px
+    &_control
+        display: flex
+        justify-content: space-between
+        margin: 0 auto
+        width: 30vw
+        .player_play
+            cursor: pointer
+
+@keyframes Rotate
+    0%
+        transform: rotate(0deg) rotate(0deg)
+    100%
+        transform: rotate(360deg) rotate(360deg)
